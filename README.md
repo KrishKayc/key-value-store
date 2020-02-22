@@ -3,7 +3,7 @@ A file based key-value store.
 
 Supports string keys and json values, concurrent read and writes from the store and 'eviction' of keys with expiration time.
 
-#Usage
+### Usage
 
 ```
   //Object in the application
@@ -24,7 +24,7 @@ Supports string keys and json values, concurrent read and writes from the store 
   
   ```
 
-#TODO :
+### TODO :
 
 - Currently supports 1GB of storage, must be made configurable.
 
