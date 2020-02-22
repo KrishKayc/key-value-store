@@ -5,7 +5,7 @@ Supports string keys and json values, concurrent read and writes from the store 
 
 #Usage
 
-``
+```
   //Object in the application
   person := Person{ID: 12568, Name: "some test user"}
   v, _ := json.Marshal(person)
@@ -22,7 +22,7 @@ Supports string keys and json values, concurrent read and writes from the store 
   var p1 Person
 	json.Unmarshal(value, &p1)
   
-  ``
+  ```
 
 #TODO :
 
