@@ -3,6 +3,8 @@ A file based key-value store.
 
 Supports string keys and json values, concurrent read and writes from the store and 'eviction' of keys with expiration time.
 
+Functions to Create, Get, check if key Exists and Delete a key from the store
+
 ### Usage
 
 ```
