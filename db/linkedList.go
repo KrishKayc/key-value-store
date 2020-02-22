@@ -60,7 +60,7 @@ func (lls *linkedListStore) getNode(key string) (*Node, error) {
 func (lls *linkedListStore) getNodeByPos(key string, pos int64) (*Node, error) {
 	buf, err := lls.sm.read(lls.nodeCap, pos)
 	n := decode(buf)
-	if key == key {
+	if n.Key == key {
 		return n, nil
 	}
 	return &Node{}, err
