@@ -102,11 +102,11 @@ func (db KVStore) Get(key string) ([]byte, error) {
 	pos := db.cache.get(key)
 	node, err := db.store.getNodeByPos(key, pos)
 
+	rmux.Unlock()
+
 	if err != nil {
 		return make([]byte, 0), &keyNotFoundError{}
 	}
-
-	rmux.Unlock()
 
 	return []byte(node.Value), nil
 
