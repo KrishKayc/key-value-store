@@ -10,9 +10,9 @@ const (
 	dataFile       = "data.dat"
 	rootPosition   = 0
 	maxstoragesize = 1     //GB
-	capsize        = 64144 //128 (key) + 64000 (Value) + 8 (position) + 8 (next position)
+	capsize        = 16144 //128 (key) + 16000 (Value) + 8 (position) + 8 (next position)
 	maxKeyLength   = 32    //characters
-	maxValLength   = 64000 //corresponds to 64KB
+	maxValLength   = 16000 //corresponds to 16KB
 )
 
 func handleError(err error) {
