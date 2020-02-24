@@ -1,5 +1,5 @@
 # key-value-store
-A file based key-value store.
+A file based key-value store, implemented using linked list and memory cache, for hashtable based implementation see => https://github.com/KrishKayc/key-value-store-hashtable
 
 Supports string keys and json values, concurrent read and writes from the store and 'eviction' of keys with expiration time.
 
